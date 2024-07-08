@@ -34,18 +34,22 @@
 
 ---
 
-## 새소식
-:white_check_mark: **2020.02.03** - 1.6.3절의 예시 이미지를 교체했습니다. 기존 이미지는 외설성 논란이 있어 왔고, 최근 이 이미지 사용을 중지하자는 움직임이 본격화되었습니다([Nautre Nanotech](https://www.nature.com/articles/s41565-018-0337-2), [Losing Lena](https://www.losinglena.com/)). 저와 출판사도 이 취지에 공감하여 이미지를 교체하기로 했습니다. 종이책에는 12쇄부터 반영됐습니다.
+## 동영상 강의
+수원대학교 한경훈 교수님께서 『밑바닥부터 시작하는 딥러닝』 1, 2편을 교재로 진행하신 강의를 공개해주셨습니다. 책만으로 부족하셨던 분들께 많은 도움이 되길 바랍니다.
 
-:white_check_mark: **2017.04.03** - 책 본문의 수식과 그림 파일들을 모아 공유합니다. 스터디 자료 등을 만드실 때 필요하면 활용하세요.
+딥러닝 I - [강의 홈페이지](https://sites.google.com/site/kyunghoonhan/deep-learning-i)
 
-* [equations_and_figures.zip](https://github.com/WegraLee/deep-learning-from-scratch/blob/master/equations_and_figures.zip?raw=true)
+[![ㅅㅣ리즈 1](https://img.youtube.com/vi/8Gpa_pdHrPE/0.jpg)](https://www.youtube.com/watch?v=8Gpa_pdHrPE&list=PLBiQZMT3oSxW1RS1hn2jWBgswh0nlcgQZ)
 
-:white_check_mark: **2017.02.26** - 각 챕터 디렉터리에 README.md 파일을 추가했습니다. 각 파일의 '용도', '관련 절', '등장 페이지'를 명기했고, 책에서 각 장의 '도입부', '목차', '이번 장에서 배운 내용'을 발췌해서 책이 없어도 큰 그림을 파악할 수 있도록 했습니다.
+딥러닝 II - [강의 홈페이지](https://sites.google.com/site/kyunghoonhan/deep-learning-ii)
 
-차차 파일 안의 소스 코드에도 친절한 설명을 덧붙이도록 하겠습니다.
+[![ㅅㅣ리즈 1](https://img.youtube.com/vi/5fwD1p9ymx8/0.jpg)](https://www.youtube.com/watch?v=5fwD1p9ymx8&list=PLBiQZMT3oSxXNGcmAwI7vzh2LzwcwJpxU)
 
-:white_check_mark: **2017.02.20** - 3쇄가 출간되었습니다. 크고 작은 오류를 잡는 김에 책 전체를 한 번 더 교정했습니다. 그렇다고 다른 책이 된 게 아니니 1, 2쇄를 보신 분은 오탈자 정보만 확인하시면 충분합니다. 살아 있는 책으로 만들기 위해 이번처럼 기회가 올 때마다 지속해서 품질을 업그레이드할 것이니 궁금하거나 설명이 잘 이해되지 않으면 언제든 문의하세요~
+딥러닝 III - [강의 홈페이지](https://sites.google.com/site/kyunghoonhan/deep-learning-iii)
+
+[![ㅅㅣ리즈 1](https://img.youtube.com/vi/kIobK76on3s/0.jpg)](https://www.youtube.com/watch?v=kIobK76on3s&list=PLBiQZMT3oSxV3RxoFgNcUNV4R7AlvUMDx)
+
+
 
 ## 책 미리보기
 [issuu](https://issuu.com/hanbit.co.kr/docs/____________________________________38d0e6451f0ddf) | [SlideShare](http://www.slideshare.net/wegra/ss-70456623) | [Yumpu](https://www.yumpu.com/xx/document/view/56594155/-)
