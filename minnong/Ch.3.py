@@ -63,6 +63,45 @@ def predict(network,x):
 
     return y
 
+def numerical_gradient(f,x):
+    # f의 인수로 함수가 들어옴
+    # Ex.) y = 2x 같은 녀석들.. 편미분 이 함수에서 하므로  여기로 들어와야 한다.
+    h = 1e-4
+    grad = np.zeros_like(x)
+
+    # 같은 값에서 다른 값으로 변형하고 싶으면, 임시 값을 할당하고 계산하면 된다.
+    for idx in range(x.size):
+        tmp_val = x[idx]
+        x[idx] = tmp_val + h
+        # f의 인수로 함수가 들어옴, 이 함수 내부에서 정의되지는 않았지만, 외부함수가 들어올 예정이다.
+        fxh1 = f(x)
+
+        x[idx] = tmp_val - h
+        fxh2 = f(x)
+
+        grad[idx] = (fxh1 - fxh2) / (2*h)
+        x[idx] = tmp_val
+
+    return grad
+
+
+
+def gradient_descent(f , init_x , lr = 0.01, step_num = 100):
+    x= init_x
+
+    for i in range(step_num):
+        grad = numerical_gradient(f,x)
+        x -= lr * grad
+    return x
+
+
+
+
+
+
+
+
+
 x,t = get_data()
 network = init_network()
 batch_size = 100
