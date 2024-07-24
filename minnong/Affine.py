@@ -1,12 +1,8 @@
 #Affine
-import numpy as np
-import os, sys
 
-from dataset.mnist import load_mnist
 from common.layers import *
-from common.gradient import numerical_gradient
 from collections import OrderedDict
-from ch05.two_layer_net import TwoLayerNet
+
 
 class TwoLayerNet:
 
@@ -60,6 +56,7 @@ class TwoLayerNet:
         def numerical_gradient(self, x, t):
             loss_W = lambda W: self.loss(x, t)
 
+            # 결과를 저장한다.
             grads = {}
             grads['W1'] = numerical_gradient(loss_W, self.params['W1'])
             grads['b1'] = numerical_gradient(loss_W, self.params['b1'])
@@ -71,16 +68,20 @@ class TwoLayerNet:
         def gradient(self, x, t):
 
             self.loss(x,t)
+            # loss function 안에 predict 함수가 내장되어 있으므로, 자동으로 forward pass를 하게 된다.
 
             dout = 1
             dout = self.lastLayer.backward(dout)
 
             layers = list(self.layers.values())
             layers.reverse()
+            # 딕셔너리를 뒤집어서 순차적으로 계산하게 된다. -> 오차역전파 할 때는 반대인거 기억하제?
 
             for layer in layers:
                 dout = layer.backward(dout)
+                # 너는 어디서 나온거니??초
 
+            # 결과를 저장한다.
             grads = {}
             grads["W1"] = self.layers["Affine1"].dW
             grads["b1"] = self.layers["Affine1"].db
@@ -88,3 +89,4 @@ class TwoLayerNet:
             grads["b2"] = self.layers["Affine2"].db
             return grads
 
+        # 구조가 직관적이지는 않은 거 같다..

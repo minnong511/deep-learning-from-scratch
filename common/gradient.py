@@ -40,6 +40,7 @@ def numerical_gradient(f, x):
         idx = it.multi_index
         tmp_val = x[idx]
         x[idx] = float(tmp_val) + h
+        # 행렬의 내부의 값을 h만큼 늘려주네..
         fxh1 = f(x) # f(x+h)
         
         x[idx] = tmp_val - h 
